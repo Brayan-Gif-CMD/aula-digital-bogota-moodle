@@ -1,0 +1,179 @@
+NOTAS DE INSTALACIÓN DEL SISTEMA
+
+PROYECTO: AULA DIGITAL BOGOTÁ - MOODLE
+
+1. DESCRIPCIÓN GENERAL:
+Este documento describe el proceso de instalación y configuración básica de la plataforma Moodle como sistema de gestión del aprendizaje (LMS), implementado en un entorno de prueba para el proyecto Aula Digital Bogotá.
+
+2. REQUISITOS DEL SISTEMA:
+
+Hardware mínimo:
+ - Procesador: 2 núcleos
+ - Memoria RAM: 4 GB
+ - Almacenamiento: 20 GB disponibles
+
+Software requerido:
+ - Sistema operativo: Linux (Ubuntu 20.04 o superior) / Windows
+ - Servidor web: Apache
+ - Lenguaje de programación: PHP (versión 7.4 o superior)
+ - Base de datos: MySQL o PostgreSQL
+ - Navegador web actualizado
+
+3. INSTALACIÓN DEL ENTORNO:
+
+3.1 Instalación de Apache:
+Se instala el servidor web Apache para gestionar las solicitudes HTTP.
+
+3.2 Instalación de PHP:
+Se instala PHP junto con sus extensiones necesarias (mysqli, xml, curl, zip, gd, mbstring).
+
+3.3 Instalación de MySQL:
+Se instala el sistema gestor de base de datos y se crea una base de datos para Moodle.
+
+Ejemplo:
+- Nombre de la base de datos: moodle_db
+- Usuario: moodle_user
+- Contraseña: (definida por el administrador)
+
+4. DESCARGA E INSTALACIÓN DE MOODLE
+
+4.1 Descarga:
+Se descarga Moodle desde el sitio oficial:
+https://download.moodle.org
+
+4.2 Ubicación:
+Se copia la carpeta de Moodle en el directorio del servidor web (htdocs o www).
+
+4.3 Configuración de permisos:
+Se asignan permisos adecuados a las carpetas de Moodle y al directorio de datos (moodledata).
+
+5. CONFIGURACIÓN DEL SISTEMA
+
+5.1 Instalación vía navegador:
+
+Se accede desde el navegador a
+http://localhost/moodle
+
+5.2 Configuración inicial:
+Se selecciona el idioma
+Se define la base de datos
+Se crean las credenciales del administrador
+
+5.3 Finalización:
+Se completa el proceso de instalación siguiendo el asistente de Moodle.
+
+6. CONFIGURACIONES ADICIONALES:
+ - Configuración de roles (administrador, docente, estudiante)
+ - Creación de cursos piloto
+ - Carga de contenidos educativos
+ - Configuración de evaluaciones
+
+7. SEGURIDAD:
+ - Implementación de HTTPS mediante certificado SSL
+ - Configuración de contraseñas seguras
+ - Restricción de acceso por roles
+
+8. PRUEBAS DEL SISTEMA:
+Se realizan pruebas para validar:
+ - Inicio de sesión
+ - Acceso a cursos
+ - Carga de contenidos
+ - Funcionamiento de evaluaciones
+
+9. OBSERVACIONES:
+El sistema fue implementado en un entorno simulado con fines académicos, cumpliendo con los requisitos del proyecto y alcanzando un nivel TRL5.
+
+10. CONCLUSIÓN:
+La instalación de Moodle permite contar con una plataforma funcional para la gestión del aprendizaje, facilitando el acceso a recursos educativos y fortaleciendo los procesos académicos en contextos vulnerables.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NOTAS DE INSTALACIÓN DEL SISTEMA EN MOODLE CLOUD
+
+PROYECTO: AULA DIGITAL BOGOTÁ
+
+1. DESCRIPCIÓN GENERAL:
+El presente documento describe el proceso de implementación de la plataforma LMS utilizando Moodle Cloud, un servicio en la nube que permite la creación de entornos virtuales de aprendizaje sin necesidad de instalación local.
+
+2. ¿QUÉ ES MOODLE CLOUD?
+Moodle Cloud es un servicio oficial que permite crear y administrar una plataforma Moodle alojada en la nube, eliminando la necesidad de configurar servidores, bases de datos o infraestructura técnica.
+
+3. REQUISITOS:
+Para el uso de Moodle Cloud se requiere:
+ - Conexión a internet
+ - Navegador web (Google Chrome, Firefox, Edge)
+ - Correo electrónico activo
+
+4. CREACIÓN DE LA PLATAFORMA:
+4.1 Registro en la plataforma:
+ - Ingresar a: https://moodlecloud.com
+ - Seleccionar la opción "Get started" o "Comenzar"
+ - Registrar una cuenta con correo electrónico
+
+4.2 Creación del sitio:
+ - Definir el nombre del sitio
+ - Elegir una URL (ejemplo: auladigitalbogota.moodlecloud.com)
+ - Seleccionar el plan gratuito (para uso académico)
+ - Aceptar términos y condiciones
+
+4.3 Confirmación:
+- Validar el correo electrónico
+ - Activar la cuenta
+
+5. CONFIGURACIÓN INICIAL:
+5.1 Acceso al sistema:
+ - Ingresar al sitio creado mediante la URL asignada
+ - Acceder con usuario administrador
+
+5.2 Configuración básica:
+ - Definir idioma (español)
+ - Configurar zona horaria
+ - Personalizar nombre del sitio
+
+5.3 Creación de usuarios:
+ - Administrador
+ - Docentes
+ - Estudiantes
+
+6. CONFIGURACIÓN ACADÉMICA:
+6.1 Creación de cursos:
+ - Definir nombre del curso
+ - Organizar por módulos o temas
+
+6.2 Carga de contenidos:
+ - Documentos PDF
+ - Videos
+ - Enlaces educativos
+
+6.3 Actividades evaluativas:
+ - Cuestionarios
+ - Tareas
+ - Foros de discusión
+
+7. GESTIÓN DE ROLES:
+Se asignan roles dentro del sistema:
+ - Administrador: control total del sistema
+ - Docente: gestión de cursos
+ - Estudiante: acceso a contenidos y actividades
+
+8. SEGURIDAD:
+ - Acceso mediante autenticación con usuario y contraseña
+ - Control de permisos por roles
+ - Protección de datos gestionada por Moodle Cloud
+
+9. PRUEBAS DEL SISTEMA:
+Se realizaron pruebas piloto para validar:
+
+ - Registro e inicio de sesión
+ - Acceso a cursos
+ - Visualización de contenidos
+ - Participación en actividades
+
+10. OBSERVACIONES:
+El uso de Moodle Cloud permitió implementar rápidamente un entorno funcional sin requerir conocimientos avanzados de instalación o administración de servidores.
+
+11. NIVEL DE MADUREZ TECNOLÓGICA:
+El sistema alcanza un nivel TRL5, ya que ha sido validado en un entorno simulado con usuarios reales (docentes y estudiantes), demostrando su funcionalidad.
+
+12. CONCLUSIÓN:
+La implementación de Moodle Cloud facilita la creación de entornos virtuales de aprendizaje de manera eficiente, reduciendo costos y complejidad técnica, lo que lo convierte en una solución viable para contextos educativos vulnerables.
